@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prueba Técnica - Demo</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light text-dark">
+  <div class="container py-5">
+    <h1 class="mb-4 text-center">Prueba Técnica - Demo Interactiva</h1>
+
+    <!-- Ejercicio 1 -->
+    <div class="card mb-4">
+      <div class="card-header bg-primary text-white">Ejercicio 1: Las Casitas de los Gatos Numéricos</div>
+      <div class="card-body">
+        <div class="mb-3">
+          <label for="input1" class="form-label">Cadena de juguetes:</label>
+          <input type="text" class="form-control" id="input1" value="" placeholder="Ej: 12345" />
+        </div>
+        <button class="btn btn-primary" onclick="demoConstruirCasitas()">Probar Ejercicio 1</button>
+        <pre class="mt-3 bg-light border p-2" id="output1"></pre>
+      </div>
+    </div>
+
+    <!-- Ejercicio 2 -->
+    <div class="card mb-4">
+      <div class="card-header bg-success text-white">Ejercicio 2: Secuencia de Siesta Felina</div>
+      <div class="card-body">
+        <div class="mb-3">
+          <label for="input2" class="form-label">Números de collar (separados por coma):</label>
+          <input type="text" class="form-control" id="input2" value="" placeholder="Ej: 1,2,3,4" />
+        </div>
+        <button class="btn btn-success" onclick="demoSiestaFelina()">Probar Ejercicio 2</button>
+        <pre class="mt-3 bg-light border p-2" id="output2"></pre>
+      </div>
+    </div>
+
+    <!-- Ejercicio 3 -->
+    <div class="card mb-4">
+      <div class="card-header bg-warning text-dark">Ejercicio 3: Descifrando el Maullido Secreto</div>
+      <div class="card-body">
+        <div class="mb-3">
+          <label for="input3_maullido" class="form-label">Maullido:</label>
+          <input type="text" class="form-control" id="input3_maullido" value="" placeholder="Ej: gatitomaulla" />
+        </div>
+        <div class="mb-3">
+          <label for="input3_diccionario" class="form-label">Diccionario felino (palabras separadas por coma):</label>
+          <input type="text" class="form-control" id="input3_diccionario" value="" placeholder="Ej: gato,maulla" />
+        </div>
+        <button class="btn btn-warning text-dark" onclick="demoDescifrarMaullido()">Probar Ejercicio 3</button>
+        <pre class="mt-3 bg-light border p-2" id="output3"></pre>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="ejercicio_1.js"></script>
+  <script src="ejercicio_2.js"></script>
+  <script src="ejercicio_3.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
